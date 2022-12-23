@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="main">
+<div class="row">
+  <div class="col-lg-3">
+
+    <div class="side" id="demo">
+      <div class="close">
+          <button  onClick="closenav('close','demo')">X</button>
+          <div class="control">
+              <p class="p1"><b>01</b></p>
+              <div class="line"><span></span></div>
+              <p class="pl-2"><b>06</b></p>
+          </div>
+          <ul class="pt">
+          <h1>Home</h1>
+          <h1>Service</h1>
+          <h1>Portfolio</h1>
+          <h1>Rsume</h1>
+          <h1>Skills</h1>
+          <h1>Contact</h1>
+          <h1>Blog</h2></ul>
+      </div>
+  </div>
+         <h2><i class="fa-solid fa-bars-staggered text-light"onClick="closenav('open','demo')"></i></h2>
+       <script>
+          function closenav(event,side){
+              console.log('event',event)
+              if(side == 'demo'){
+                  if (event =='open'){
+              document.getElementById('demo').style.width="331px"
+          }    
+       else{
+          document.getElementById('demo').style.width="0px"
+       }
+      }
+         else{
+            if (event=='open') {
+                document.getElementById('demo1').style.width="0px"
+            } 
+      
+            else{
+          document.getElementById('demo1').style.width="250px"
+       } 
+           }} 
+          
+      
+      </script>
+
+    <div class="control">
+      <p class="p1"><b>01</b></p>
+      <div class="line"><span></span></div>
+      <p class="pl-2"><b>06</b></p>
+  </div>
+  <div class="profile">
+      <pre class="name">N A M E</pre>
+      <P class="text-white name1">Pragati Sonawane</P>
+  </div>
+  <div class="profile">
+      <pre class="name">R O L E</pre>
+      <P class="text-white name1">Designer</P>
+  </div>
+  <div class="profile">
+      <pre class="name">E M A I L</pre>
+      <P class="text-white name1">stone@example.com</P>
+  </div>
+  <div class="profile">
+      <pre class="name">P H O N E</pre>
+      <P class="text-white name1">(+987) 987 654 321</P>
+
+      <img src="../img/signature.jpeg" style="width: 240px; margin-top: 80px;margin-right: 20px;">
+  </div>
+  </div>
+  <div class="col-lg-4"></div>
+  <div class="col-lg-5"></div>
+</div>  
+</div>
+
+    
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>        
+</body>
+</html>
